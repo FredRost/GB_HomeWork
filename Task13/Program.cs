@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+string digit = Convert.ToString(number);
+if(digit.Length > 2)
+{
+    Console.WriteLine("Третья цифра этого числа: " + digit[2]);
+}
+else
+{
+    Console.Write("Третьей цифры нет");
+}
