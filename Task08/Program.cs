@@ -2,8 +2,8 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 Console.WriteLine("Введите целое число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-if (N > 0)
+int number = Convert.ToInt32(Console.ReadLine());
+if (number > 0)
 {
     for (int i = 2; i <= N; i = i + 2)
     {
