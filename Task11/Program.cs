@@ -1,14 +1,12 @@
-﻿int number = new Random().Next(100, 999);
-Console.WriteLine($"Случайное число: {number}");
+﻿Console.WriteLine("Введите первое число: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
 
-int delSecondDigit = Result(number);
-int Result(int num)
-
+int result = number1 % number2;
+if (result == 0)
+Console.WriteLine("Первое число кратно второму");
+else
 {
-    int firstDigit = num / 100;
-    int thirdDigit = num % 10;
-    int result = firstDigit * 10 + thirdDigit;
-    return result;
+    Console.WriteLine($"Первое число не кратно второму, остаток: {result}");
 }
-
-Console.WriteLine($"Результат: {delSecondDigit}");
