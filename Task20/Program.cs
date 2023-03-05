@@ -10,8 +10,8 @@ int xB = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координаты точки yB: ");
 int yB = Convert.ToInt32(Console.ReadLine());
 
-double Leng = Distance(xA, yA, xB, yB);
-Console.WriteLine($"Расстояние между точкой A и точной B равно - {Math.Round(Leng, 2, MidpointRounding.ToZero)}");
+double leng = Distance(xA, yA, xB, yB);
+Console.WriteLine($"Расстояние между точкой A и точной B равно - {Math.Round(leng, 2, MidpointRounding.ToZero)}");
 
 double Distance (int x1, int y1, int x2, int y2)
 {
