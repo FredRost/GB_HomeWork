@@ -1,4 +1,22 @@
-﻿Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+﻿Console.WriteLine("Введите положительное натуральное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-3 -> 1, 8, 27
-5 -> 1, 8, 27, 64, 125
+if(number > 0)
+{
+    TableQube(number);
+}
+
+else
+{
+    Console.WriteLine("Число не положительное");
+}
+
+void TableQube (int num)
+{
+    int i = 1;
+    while (i <= num)
+    {
+        Console.WriteLine($"{i, 4} -> {i*i*i, 4}");
+        i++;
+    }
+}
