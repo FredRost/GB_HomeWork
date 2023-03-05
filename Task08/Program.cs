@@ -5,7 +5,7 @@ Console.WriteLine("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number > 0)
 {
-    for (int i = 2; i <= N; i = i + 2)
+    for (int i = 2; i <= number; i = i + 2)
     {
         Console.Write(i + " ");
     }
