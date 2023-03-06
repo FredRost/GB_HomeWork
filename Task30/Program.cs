@@ -1,5 +1,4 @@
 ﻿int[] array = new int [8];
-Random rand = new Random();
 
 Array(array);
 WriteArray(array);
