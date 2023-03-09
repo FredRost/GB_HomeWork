@@ -6,7 +6,6 @@
   int exponent = Exponent(numberA, numberB);
   Console.WriteLine("Ответ: " + exponent);
 
-
 int Exponent(int numberA, int numberB)
 {
   int result = 1;
