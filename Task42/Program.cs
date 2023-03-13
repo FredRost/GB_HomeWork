@@ -6,6 +6,16 @@
 
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-string dec = Convert.ToString(num,2);
 
-Console.WriteLine(dec);
+string DecimalToBinary(int n)
+{
+    string result = string.Empty;
+    while (n > 0)
+    {
+        result = n % 2 + result;
+        n /= 2;
+    }
+    return result;
+}
+
+Console.WriteLine(DecimalToBinary(num));
