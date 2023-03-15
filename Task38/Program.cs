@@ -1,15 +1,15 @@
-﻿int[] GenerateArray()
+﻿double[] GenerateArray()
 {
-    int[] array = new int[5];
+    double[] array = new double[5];
 
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(1,11);
+        array[i] = new Random().NextDouble() * 100;
     }
     return array;
 }
 
-void PrintArray(int[] array)
+void PrintArray(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -18,11 +18,11 @@ void PrintArray(int[] array)
     }
 }
 
-void Difference (int [] array)
+void Difference (double[] array)
 {
-  int MaxValue = array[0];
-  int MinValue = array[0];
-  int result = 0;
+  double MaxValue = array[0];
+  double MinValue = array[0];
+  double result = 0;
 
   for (int i = 0; i < array.Length; i++)
   {
@@ -40,7 +40,7 @@ void Difference (int [] array)
   System.Console.WriteLine($"Разница между максимальным ({MaxValue}) и минимальным ({MinValue}) элементами массива равна {result}");
 }
 
-int [] array = GenerateArray();
+double[] array = GenerateArray();
 PrintArray(array);
-System.Console.WriteLine();
+System.Console.WriteLine(PrintArray(array));
 Difference(array);
